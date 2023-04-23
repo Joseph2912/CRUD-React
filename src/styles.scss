@@ -1,0 +1,146 @@
+ body {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: 100px;
+
+ }
+
+ %btn {
+
+     margin: 0.5px;
+     padding: 8px;
+     border-style: none;
+     color: whitesmoke;
+     font-family: "Roboto", sans-serif;
+ }
+
+ %input {
+
+     padding: 6px;
+     border-style: 2px solid;
+     width: 40%;
+     font-family: "Roboto", sans-serif;
+
+ }
+
+ %table {
+
+     text-align: center;
+     background-color: #F2F2F2;
+     width: 725px;
+     border: 1px solid grey;
+     padding: 8px;
+     font-size: 15px;
+     font-family: "Roboto", sans-serif;
+     
+
+ }
+
+ %label {
+
+     padding: 8px;
+     width: 117px;
+     background-color: #fff;
+     color: #b4abc0;
+     font-family: "Roboto", sans-serif;
+ }
+
+ .form-añadir {
+     @extend %table;
+     margin-top: 20px;
+     margin-bottom: 20px;
+
+     input {
+         @extend %input;
+         margin: 8px;
+
+     }
+
+     button {
+         @extend %btn;
+         background-color: #53298C;
+
+         &:hover {
+             background-color: #5e2fa0;
+         }
+     }
+ }
+
+ .table-update {
+
+     @extend %table;
+
+     input {
+         @extend %input;
+         width: 85%;
+     }
+
+     button {
+         @extend %btn;
+         background-color: #EBA61A;
+
+         &:hover {
+             background-color: #fdb92f;
+         }
+     }
+ }
+
+ .form-editar {
+     @extend %table;
+
+     table {
+         width: 100%;
+     }
+
+     th {
+         @extend %label;
+     }
+
+     td {
+         padding-top: 20px;
+     }
+
+     .btnEliminar {
+         @extend %btn;
+         background-color: #FB4138;
+
+         &:hover {
+             background-color: #fc5249;
+         }
+     }
+
+     .btnEditar {
+         @extend %btn;
+         background-color: #EBA61A;
+
+         &:hover {
+             background-color: #fdb92f;
+         }
+     }
+ }
+
+ .table-buscar {
+
+    @extend %table;
+    width: 100%;
+    
+    input {
+
+        @extend %input;
+        margin: 8px;
+        width: 100%;
+
+    }
+    button {
+        @extend %btn;
+        margin-left: -40px;
+        background-color: #53298C;
+
+        &:hover {
+            background-color: #5e2fa0;
+        }
+    }
+
+ }
