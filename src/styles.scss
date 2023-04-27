@@ -34,7 +34,7 @@
      padding: 8px;
      font-size: 15px;
      font-family: "Roboto", sans-serif;
-     
+
 
  }
 
@@ -123,24 +123,47 @@
 
  .table-buscar {
 
-    @extend %table;
-    width: 100%;
-    
-    input {
+     @extend %table;
+     width: 100%;
 
-        @extend %input;
-        margin: 8px;
-        width: 100%;
+     input {
 
-    }
-    button {
-        @extend %btn;
-        margin-left: -40px;
-        background-color: #53298C;
+         @extend %input;
+         margin: 8px;
+         width: 100%;
 
-        &:hover {
-            background-color: #5e2fa0;
-        }
-    }
+     }
+
+     button {
+         @extend %btn;
+         margin-left: -40px;
+         background-color: #53298C;
+
+         &:hover {
+             background-color: #5e2fa0;
+         }
+     }
 
  }
+ .mi-alerta {
+    position: absolute;
+    top: 30px;
+    background-color: #ffc107;
+    color: #000;
+    font-size: 16px;
+    padding: 16px;
+    animation: entrada 3s  1 forwards;
+  }
+  
+  @keyframes entrada {
+    0% {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+   
+  }
+
