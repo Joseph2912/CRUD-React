@@ -5,19 +5,15 @@ import "./styles.scss";
 export const Crud = () => {
   const item = [];
 
-
   const [items, setItem] = useState(item);
   const [updateState, setUpdateState] = useState(-1);
   const [mostrarAlerta, setMostrarAlerta] = useState(false);
 
   useEffect(() => {
-
-    if (items.length > 0 ) {
+    if (items.length > 0) {
       setMostrarAlerta(true);
     }
   }, [items]);
-
-  
 
   const idEdit = (id) => {
     setUpdateState(id);
@@ -43,7 +39,7 @@ export const Crud = () => {
   return (
     <div>
       <div>
-        {mostrarAlerta && items.length > 0   && (
+        {mostrarAlerta && items.length > 0 && (
           <div className="mi-alerta">
             Usuario añadido {items[items.length - 1].name}
           </div>
