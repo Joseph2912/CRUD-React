@@ -14,6 +14,7 @@
      border-style: none;
      color: whitesmoke;
      font-family: "Roboto", sans-serif;
+     cursor: pointer;
  }
 
  %input {
@@ -47,7 +48,7 @@
      font-family: "Roboto", sans-serif;
  }
 
- .form-añadir {
+ .form-Create {
      @extend %table;
      margin-top: 20px;
      margin-bottom: 20px;
@@ -105,6 +106,7 @@
      .btnEliminar {
          @extend %btn;
          background-color: #FB4138;
+         cursor: pointer;
 
          &:hover {
              background-color: #fc5249;
@@ -114,6 +116,7 @@
      .btnEditar {
          @extend %btn;
          background-color: #EBA61A;
+         cursor: pointer;
 
          &:hover {
              background-color: #fdb92f;
@@ -139,6 +142,7 @@
          margin-left: -40px;
          background-color: #53298C;
 
+
          &:hover {
              background-color: #5e2fa0;
          }
@@ -148,6 +152,7 @@
 
  .mi-alerta {
      position: absolute;
+
      top: 30px;
      background-color: #ffc107;
      color: #000;
@@ -168,3 +173,50 @@
      }
 
  }
+ 
+ .mi-alerta2 {
+    position: absolute;
+   
+    top: 30px;
+    background-color: #ff0707;
+    color: #000;
+    font-size: 16px;
+    padding: 16px;
+    animation: entrada2 3s 1 forwards;
+}
+
+@keyframes entrada2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.mi-alerta3 {
+    position: absolute;
+    top: 30px;
+    background-color: #ff0707;
+    color: #000;
+    font-size: 16px;
+    padding: 16px;
+    animation: entrada2 3s 1 forwards;
+}
+
+@keyframes entrada3 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
